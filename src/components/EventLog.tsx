@@ -1,0 +1,1 @@
+export function EventLog({ events }: { events: {time:string; message:string}[] }) { return <div className="event-log">{events.slice(-6).reverse().map((e,i)=><div key={i}><time>{e.time}</time><span>{e.message}</span></div>)}{!events.length&&<div className="muted">暂无事件</div>}</div> }

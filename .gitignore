@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+
+# Vite / frontend build output
+dist/
+.vite/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# TypeScript / tooling caches
+*.tsbuildinfo
+.eslintcache
+.cache/
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# Coverage and test output
+coverage/
+htmlcov/
+.coverage
+.coverage.*
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+
+# IDE and OS files
+.idea/
+.vscode/
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+
+# Test scripts and fixtures are intentionally allowed to be committed.
+# Keep only generated build/runtime data ignored above.

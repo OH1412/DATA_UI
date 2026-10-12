@@ -1,0 +1,1 @@
+export function DeviceStatus({ label, ok, warn=false }: {label:string;ok:boolean;warn?:boolean}) { return <div className="health-row"><span className={`dot ${ok?(warn?'warn':'ok'):'bad'}`}/><span>{label}</span><b>{ok?(warn?'警告':'正常'):'断开'}</b></div> }

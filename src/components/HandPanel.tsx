@@ -1,0 +1,2 @@
+import type { Hand } from '../types/pico';
+export function HandPanel({ side, hand }: { side: 'LEFT'|'RIGHT'; hand?: Hand }) { return <div className="hand-mini"><div className="eyebrow">{side} HAND <b className={hand?.active?'active-text':'lost-text'}>{hand?.active?'ACTIVE':'LOST'}</b></div><div>{hand?.joint_count??'—'} JOINTS · CONFIDENCE {hand ? `${(hand.confidence*100).toFixed(0)}%` : '—'}</div></div> }
